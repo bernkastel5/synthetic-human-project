@@ -33,7 +33,7 @@
 
 1.  **Клонируйте репозиторий:**
     ```bash
-    git clone <URL_репозитория>
+    git clone https://github.com/bernkastel5/synthetic-human-project
     cd synthetic-human-project
     ```
 
