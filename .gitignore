@@ -1,0 +1,25 @@
+# Скомпилированные файлы и артефакты
+target/
+*.jar
+*.war
+*.ear
+
+# Логи
+*.log
+
+# Файлы IDE
+.idea/
+*.iml
+*.iws
+
+# Файлы операционной системы
+.DS_Store
+Thumbs.db
+
+# Конфигурация запуска IDE
+.vscode/
+
+# Локальные настройки Maven
+mvnw
+mvnw.cmd
+.mvn/

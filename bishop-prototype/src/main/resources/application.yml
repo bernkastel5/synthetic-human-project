@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    tags:
+      application: bishop-prototype
+
+weyland:
+  core:
+    queue:
+      core-pool-size: 2      # Базовое количество потоков для обработки COMMON команд
+      max-pool-size: 4       # Максимальное количество потоков
+      capacity: 10           # Максимальный размер очереди. 11-я команда вызовет ошибку.
+
+  audit:
+    mode: CONSOLE
+    kafka:
+      topic: "weyland-audit-log"
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
