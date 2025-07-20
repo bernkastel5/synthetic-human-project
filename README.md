@@ -72,7 +72,7 @@ curl -X POST http://localhost:8080/api/android/command \
     "time": "2024-05-21T10:00:00Z"
 }'
 
-**Пример (CRITICAL Priority):**
+Пример (CRITICAL Priority):
 curl -X POST http://localhost:8080/api/android/command \
 -H "Content-Type: application/json" \
 -d '{
